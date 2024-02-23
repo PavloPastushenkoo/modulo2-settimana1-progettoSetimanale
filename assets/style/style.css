@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: italic;
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+ */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.5vh;
+  width: 84vw;
+  background-color: #ffc017;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  position: fixed;
+  z-index: 1;
+
+
+}
+
+#opzioniNavBar {
+  display: flex;
+  width: 38%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opzione2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 25%;
+  height: 35px;
+  border-radius: 40px;
+}
+
+#testaPagina {
+  display: flex;
+  padding-left: 8%;
+  justify-content: space-between;
+  align-items: center;
+  height: 58vh;
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  padding-top: 9vh;
+}
+
+#contenitoreTitolo {
+  height: 60%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 4%;
+}
+
+#titolo h1 {
+  font-size: 7em;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: -6px;
+}
+
+
+.paragrafo {
+    width: 65%;
+
+}
+
+.paragrafo p {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+#contenitoreTitolo .opzione3{
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    font-weight: 400;
+    width: 30%;
+    height: 40px;
+    margin-top: 40px;
+    letter-spacing: 1.5px;
+}
+
+#contenitoreM {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+#contenitoreM svg{
+    padding-right: 500px;
+    position: absolute;
+    left: 38px;
+}
+
+#primaSezione{
+    border-bottom: 1px solid rgb(180, 180, 180);
+    height: 45vh;
+  padding-left: 8%;
+  padding-bottom: 3%;
+
+}
+
+h3{
+    margin-top: 3%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+}
+
+#trending {
+    display: flex;
+    align-items: center;
+    
+}
+#trending img{
+    padding-top: 1.5%;
+    margin-right: 15px;
+}
+
+
+.sceltaArticolo{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 85%;
+
+}
+
+.trend{
+
+    display: flex;
+    width: 28%;
+    height: 45%;
+    padding-right: 2%;
+}
+
+.numero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+
+    font-size: 2em;
+    padding-right: 18px;
+
+}
+.sceltaArticolo .numero p{
+    margin: 0;
+    color: rgb(232, 232, 232);
+    font-family: "Roboto", sans-serif;
+}
+.immagineTonda{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+.descrizioneArticolo{
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.descrizioneArticolo cite{
+    font-size: 0.9em;
+}
+
+.descrizioneArticolo h4{
+    font-size: 0.95em;
+    margin: 0;
+
+
+}
+.descrizioneArticolo p{
+    margin: 0;
+}
+
+.autore{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+
+}
+
+.conStellina{
+    display: flex;
+}
+
+.sceltaArticolo p{
+    font-size: 0.9em;
+    color: rgb(159, 159, 159);
+}
+
+#articoliVerticali{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    width: 80%;
+    justify-content: space-between;
+}
+.articoloVerticale{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    padding-bottom: 40px;
+
+}
+.articoloVerticale:first-of-type{
+    padding-top: 60px;
+}
+
+.articoloVerticale:last-of-type{
+    margin-bottom: 50px;
+}
+
+
+.contenutoArticolo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 22vh;
+    width: 80%;
+
+}
+
+
+.titoloArticolo h2{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+
+}
+.paragrafoArticolo{
+    width: 95%;
+}
+
+.paragrafoArticolo p{
+    margin: 0;
+    color: rgba(130, 116, 117, 1);
+    font-family: "Roboto", sans-serif;
+
+}
+
+.dataTempo{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.immagineArticolo{
+    width: 30%;
+}
+
+.immagineArticolo img{
+    width: 100%;
+
+}
+.conStellina2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+}
+.conStellina2 p{
+margin: 0;
+color: rgba(130, 116, 117, 1);
+font-family: "Roboto", sans-serif;
+font-size: 0.9em;
+
+}
+
+.conStellina2 img{
+    margin-left: 5px;
+}
+
+.dataTempo p{
+margin-left: 5px;
+}
+
+.grigio{
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(236, 236, 236);
+
+}
+
+#corpoPagina{
+    margin-top: 20px;
+    display: flex;
+}
+
+#contenitoreTopic{
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+
+#contenitoreTopic h3{
+    margin-left: 10px;
+}
+
+
+#contenitoreAside2{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+    border-bottom: 1px solid rgb(157, 156, 156);
+}
+.topic{
+
+    background-color: rgba(242, 242, 242, 1);
+    margin: 8px;
+    padding: 12px 15px 12px 15px;
+    border-radius: 35px;
+    font-family: "Roboto", sans-serif;
+}
+.topic p{
+    color: rgba(130, 116, 117, 1);
+
+    margin: 0;
+}
+
+#lista{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 60%;
+    color: rgba(130, 116, 117, 1);
+
+}
+
+#lista li{
+    margin-left: 10px;
+
+    margin-right: 20px;
+    margin-top: 7%;
+}
