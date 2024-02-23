@@ -31,6 +31,7 @@ body {
   z-index: 1;
   transition: background-color 0.3s ease;
 }
+
 #navBar.scrollato{
     background-color: white;
 }
@@ -55,7 +56,7 @@ body {
 }
 
 #opzione2.scrollato{
-    background-color: green;
+    background-color: #1a8917;
 }
 
 
@@ -344,6 +345,10 @@ margin-left: 5px;
 #contenitoreTopic{
     margin-left: 7%;
     margin-top: 3%;
+    height: max-content;
+    flex-direction: column;
+    position: sticky;
+    top: 9.5vh;
 }
 
 
@@ -351,13 +356,13 @@ margin-left: 5px;
     margin-left: 10px;
 }
 
-
 #contenitoreAside2{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 45px;
     border-bottom: 1px solid rgb(157, 156, 156);
+
 }
 .topic{
 
@@ -372,6 +377,7 @@ margin-left: 5px;
 
     margin: 0;
 }
+
 
 #lista{
     list-style: none;
