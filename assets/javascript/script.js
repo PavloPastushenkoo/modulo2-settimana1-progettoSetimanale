@@ -9,3 +9,24 @@ window.addEventListener("scroll", function () {
     tasto.classList.remove("scrollato");
   }
 });
+
+const arrayNumerica = (elemento, qtty, array) => {
+  let arrayNew = [];
+  for (let i = 0; i < qtty; i++) {
+    let random = Math.floor(Math.random() * elemento.length);
+    arrayNew.push(elemento[random]);
+  }
+  return arrayNew;
+};
+
+window.addEventListener("load", function (e) {
+  const elementi = document.querySelectorAll("g[stroke-linecap=butt]");
+  setInterval(() => {
+    let random = Math.floor(Math.random() * elementi.length);
+    if (elementi[random].getAttribute("opacity") === "1") {
+      elementi[random].setAttribute("opacity", "0");
+    } else {
+      elementi[random].setAttribute("opacity", "1");
+    }
+  }, 40);
+});
